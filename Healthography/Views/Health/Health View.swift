@@ -21,6 +21,8 @@ struct HealthView: View {
 					ChartView(datas: model.monthlySteps)
 						.frame(height: 200)
 						.padding()
+					
+					Spacer()
 				}
 				
 				NavigationLink(destination: CountryInfo()) {

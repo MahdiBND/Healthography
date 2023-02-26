@@ -11,22 +11,24 @@ struct ChartView: View {
 	@State var datas: [String: Double]
 	@State private var showInfo = false
 	
-    var body: some View {
-		ScrollView(.horizontal) {
-			HStack(alignment: .bottom) {
+	var body: some View {
+		GeometryReader { geoProxy in
+			HStack(alignment: .bottom, spacing: 1) {
 				ForEach(datas.sorted(by: <), id: \.key) { key, value in
-					VStack {
-						Text(String(format: "%.0f", value))
-							.font(.caption)
-							.foregroundColor(.secondary)
-						RoundedRectangle(cornerRadius: 8)
-							.fill(Color.indigo)
-							.frame(width: 12, height: value / 20)
-					}
+					RoundedRectangle(cornerRadius: 8)
+						.fill(Color.indigo)
+						.frame(width: 10, height: (value / magnitude()) * geoProxy.size.height)
 				}
 			}
 		}
-    }
+	}
+	
+	func magnitude() -> Double {
+		let values = datas.map { $0.value }
+		let max = values.max()!
+		let min = values.min()!
+		return max - min
+	}
 }
 
 //struct ChartView_Previews: PreviewProvider {
