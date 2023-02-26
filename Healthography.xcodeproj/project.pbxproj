@@ -1,0 +1,651 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4876E72829AA651500F6D0DB /* HealthographyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E72729AA651500F6D0DB /* HealthographyApp.swift */; };
+		4876E72A29AA651500F6D0DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E72929AA651500F6D0DB /* ContentView.swift */; };
+		4876E72C29AA651A00F6D0DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4876E72B29AA651A00F6D0DB /* Assets.xcassets */; };
+		4876E72F29AA651A00F6D0DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4876E72E29AA651A00F6D0DB /* Preview Assets.xcassets */; };
+		4876E73729AA65D200F6D0DB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 4876E73629AA65D200F6D0DB /* Alamofire */; };
+		4876E73A29AA65F200F6D0DB /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 4876E73929AA65F200F6D0DB /* SDWebImageSwiftUI */; };
+		4876E73C29AA684A00F6D0DB /* CovidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E73B29AA684A00F6D0DB /* CovidData.swift */; };
+		4876E73F29AA6AB500F6D0DB /* Covid Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E73E29AA6AB500F6D0DB /* Covid Model.swift */; };
+		4876E74429AA6F2900F6D0DB /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4876E74329AA6F2900F6D0DB /* HealthKit.framework */; };
+		4876E74629AA70D100F6D0DB /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E74529AA70D100F6D0DB /* NetworkManager.swift */; };
+		4876E74929AA712B00F6D0DB /* Route.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E74829AA712B00F6D0DB /* Route.swift */; };
+		4876E74B29AA76CE00F6D0DB /* Covid Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E74A29AA76CE00F6D0DB /* Covid Info.swift */; };
+		4876E74E29AA78FC00F6D0DB /* Extensions+Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E74D29AA78FC00F6D0DB /* Extensions+Tools.swift */; };
+		4876E75729AA7C5D00F6D0DB /* HealthographyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4876E75629AA7C5D00F6D0DB /* HealthographyTests.swift */; };
+		489146B929AAC8D300B7EAB4 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489146B829AAC8D300B7EAB4 /* Country.swift */; };
+		489146BB29AACB3800B7EAB4 /* Country Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489146BA29AACB3800B7EAB4 /* Country Model.swift */; };
+		489146BD29AACD1000B7EAB4 /* Health View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489146BC29AACD1000B7EAB4 /* Health View.swift */; };
+		489146C029AACD7800B7EAB4 /* Country Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489146BF29AACD7800B7EAB4 /* Country Info.swift */; };
+		489146C329AACE8700B7EAB4 /* Country Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489146C229AACE8700B7EAB4 /* Country Details.swift */; };
+		489146C529AAD87A00B7EAB4 /* Health Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489146C429AAD87A00B7EAB4 /* Health Model.swift */; };
+		489CACB129AAC6540078E500 /* Item Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489CACB029AAC6540078E500 /* Item Details.swift */; };
+		48A64BFA29ABA8E300849368 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48A64BF929ABA8E300849368 /* ChartView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4876E75829AA7C5D00F6D0DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4876E71C29AA651400F6D0DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4876E72329AA651500F6D0DB;
+			remoteInfo = Healthography;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4876E72429AA651500F6D0DB /* Healthography.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Healthography.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4876E72729AA651500F6D0DB /* HealthographyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthographyApp.swift; sourceTree = "<group>"; };
+		4876E72929AA651500F6D0DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4876E72B29AA651A00F6D0DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4876E72E29AA651A00F6D0DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4876E73B29AA684A00F6D0DB /* CovidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidData.swift; sourceTree = "<group>"; };
+		4876E73E29AA6AB500F6D0DB /* Covid Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Covid Model.swift"; sourceTree = "<group>"; };
+		4876E74129AA6F2900F6D0DB /* Healthography.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Healthography.entitlements; sourceTree = "<group>"; };
+		4876E74329AA6F2900F6D0DB /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		4876E74529AA70D100F6D0DB /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4876E74829AA712B00F6D0DB /* Route.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Route.swift; sourceTree = "<group>"; };
+		4876E74A29AA76CE00F6D0DB /* Covid Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Covid Info.swift"; sourceTree = "<group>"; };
+		4876E74D29AA78FC00F6D0DB /* Extensions+Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Tools.swift"; sourceTree = "<group>"; };
+		4876E75429AA7C5D00F6D0DB /* HealthographyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HealthographyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4876E75629AA7C5D00F6D0DB /* HealthographyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthographyTests.swift; sourceTree = "<group>"; };
+		489146B829AAC8D300B7EAB4 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		489146BA29AACB3800B7EAB4 /* Country Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country Model.swift"; sourceTree = "<group>"; };
+		489146BC29AACD1000B7EAB4 /* Health View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health View.swift"; sourceTree = "<group>"; };
+		489146BF29AACD7800B7EAB4 /* Country Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country Info.swift"; sourceTree = "<group>"; };
+		489146C229AACE8700B7EAB4 /* Country Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country Details.swift"; sourceTree = "<group>"; };
+		489146C429AAD87A00B7EAB4 /* Health Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Health Model.swift"; sourceTree = "<group>"; };
+		489CACB029AAC6540078E500 /* Item Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item Details.swift"; sourceTree = "<group>"; };
+		48A64BF929ABA8E300849368 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4876E72129AA651500F6D0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4876E74429AA6F2900F6D0DB /* HealthKit.framework in Frameworks */,
+				4876E73A29AA65F200F6D0DB /* SDWebImageSwiftUI in Frameworks */,
+				4876E73729AA65D200F6D0DB /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4876E75129AA7C5D00F6D0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4876E71B29AA651400F6D0DB = {
+			isa = PBXGroup;
+			children = (
+				4876E72629AA651500F6D0DB /* Healthography */,
+				4876E72529AA651500F6D0DB /* Products */,
+				4876E74229AA6F2900F6D0DB /* Frameworks */,
+				4876E75529AA7C5D00F6D0DB /* HealthographyTests */,
+			);
+			sourceTree = "<group>";
+		};
+		4876E72529AA651500F6D0DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4876E72429AA651500F6D0DB /* Healthography.app */,
+				4876E75429AA7C5D00F6D0DB /* HealthographyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4876E72629AA651500F6D0DB /* Healthography */ = {
+			isa = PBXGroup;
+			children = (
+				4876E74129AA6F2900F6D0DB /* Healthography.entitlements */,
+				4876E74F29AA790C00F6D0DB /* Global */,
+				4876E74729AA710700F6D0DB /* Network */,
+				4876E74C29AA76D800F6D0DB /* Views */,
+				4876E73D29AA6A9900F6D0DB /* Models */,
+				4876E74029AA6ABC00F6D0DB /* View Models */,
+				4876E72B29AA651A00F6D0DB /* Assets.xcassets */,
+				4876E72D29AA651A00F6D0DB /* Preview Content */,
+			);
+			path = Healthography;
+			sourceTree = "<group>";
+		};
+		4876E72D29AA651A00F6D0DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4876E72E29AA651A00F6D0DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4876E73D29AA6A9900F6D0DB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4876E73B29AA684A00F6D0DB /* CovidData.swift */,
+				489146B829AAC8D300B7EAB4 /* Country.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4876E74029AA6ABC00F6D0DB /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				4876E73E29AA6AB500F6D0DB /* Covid Model.swift */,
+				489146BA29AACB3800B7EAB4 /* Country Model.swift */,
+				489146C429AAD87A00B7EAB4 /* Health Model.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		4876E74229AA6F2900F6D0DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4876E74329AA6F2900F6D0DB /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4876E74729AA710700F6D0DB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				4876E74529AA70D100F6D0DB /* NetworkManager.swift */,
+				4876E74829AA712B00F6D0DB /* Route.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		4876E74C29AA76D800F6D0DB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4876E72929AA651500F6D0DB /* ContentView.swift */,
+				489CACAF29AAC6380078E500 /* Covid */,
+				489146BE29AACD1800B7EAB4 /* Health */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4876E74F29AA790C00F6D0DB /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				4876E72729AA651500F6D0DB /* HealthographyApp.swift */,
+				4876E74D29AA78FC00F6D0DB /* Extensions+Tools.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		4876E75529AA7C5D00F6D0DB /* HealthographyTests */ = {
+			isa = PBXGroup;
+			children = (
+				4876E75629AA7C5D00F6D0DB /* HealthographyTests.swift */,
+			);
+			path = HealthographyTests;
+			sourceTree = "<group>";
+		};
+		489146BE29AACD1800B7EAB4 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				489146BC29AACD1000B7EAB4 /* Health View.swift */,
+				48A64BF929ABA8E300849368 /* ChartView.swift */,
+				489146C129AACE6F00B7EAB4 /* Country */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		489146C129AACE6F00B7EAB4 /* Country */ = {
+			isa = PBXGroup;
+			children = (
+				489146BF29AACD7800B7EAB4 /* Country Info.swift */,
+				489146C229AACE8700B7EAB4 /* Country Details.swift */,
+			);
+			path = Country;
+			sourceTree = "<group>";
+		};
+		489CACAF29AAC6380078E500 /* Covid */ = {
+			isa = PBXGroup;
+			children = (
+				4876E74A29AA76CE00F6D0DB /* Covid Info.swift */,
+				489CACB029AAC6540078E500 /* Item Details.swift */,
+			);
+			path = Covid;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4876E72329AA651500F6D0DB /* Healthography */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4876E73229AA651A00F6D0DB /* Build configuration list for PBXNativeTarget "Healthography" */;
+			buildPhases = (
+				4876E72029AA651500F6D0DB /* Sources */,
+				4876E72129AA651500F6D0DB /* Frameworks */,
+				4876E72229AA651500F6D0DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Healthography;
+			packageProductDependencies = (
+				4876E73629AA65D200F6D0DB /* Alamofire */,
+				4876E73929AA65F200F6D0DB /* SDWebImageSwiftUI */,
+			);
+			productName = Healthography;
+			productReference = 4876E72429AA651500F6D0DB /* Healthography.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4876E75329AA7C5D00F6D0DB /* HealthographyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4876E75A29AA7C5D00F6D0DB /* Build configuration list for PBXNativeTarget "HealthographyTests" */;
+			buildPhases = (
+				4876E75029AA7C5D00F6D0DB /* Sources */,
+				4876E75129AA7C5D00F6D0DB /* Frameworks */,
+				4876E75229AA7C5D00F6D0DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4876E75929AA7C5D00F6D0DB /* PBXTargetDependency */,
+			);
+			name = HealthographyTests;
+			productName = HealthographyTests;
+			productReference = 4876E75429AA7C5D00F6D0DB /* HealthographyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4876E71C29AA651400F6D0DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					4876E72329AA651500F6D0DB = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					4876E75329AA7C5D00F6D0DB = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 4876E72329AA651500F6D0DB;
+					};
+				};
+			};
+			buildConfigurationList = 4876E71F29AA651400F6D0DB /* Build configuration list for PBXProject "Healthography" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4876E71B29AA651400F6D0DB;
+			packageReferences = (
+				4876E73529AA65D200F6D0DB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				4876E73829AA65F200F6D0DB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+			);
+			productRefGroup = 4876E72529AA651500F6D0DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4876E72329AA651500F6D0DB /* Healthography */,
+				4876E75329AA7C5D00F6D0DB /* HealthographyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4876E72229AA651500F6D0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4876E72F29AA651A00F6D0DB /* Preview Assets.xcassets in Resources */,
+				4876E72C29AA651A00F6D0DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4876E75229AA7C5D00F6D0DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4876E72029AA651500F6D0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				489146C529AAD87A00B7EAB4 /* Health Model.swift in Sources */,
+				489146BD29AACD1000B7EAB4 /* Health View.swift in Sources */,
+				4876E74629AA70D100F6D0DB /* NetworkManager.swift in Sources */,
+				489146C029AACD7800B7EAB4 /* Country Info.swift in Sources */,
+				489146C329AACE8700B7EAB4 /* Country Details.swift in Sources */,
+				4876E73C29AA684A00F6D0DB /* CovidData.swift in Sources */,
+				4876E72A29AA651500F6D0DB /* ContentView.swift in Sources */,
+				48A64BFA29ABA8E300849368 /* ChartView.swift in Sources */,
+				489146BB29AACB3800B7EAB4 /* Country Model.swift in Sources */,
+				489CACB129AAC6540078E500 /* Item Details.swift in Sources */,
+				4876E74E29AA78FC00F6D0DB /* Extensions+Tools.swift in Sources */,
+				4876E74929AA712B00F6D0DB /* Route.swift in Sources */,
+				4876E73F29AA6AB500F6D0DB /* Covid Model.swift in Sources */,
+				4876E74B29AA76CE00F6D0DB /* Covid Info.swift in Sources */,
+				489146B929AAC8D300B7EAB4 /* Country.swift in Sources */,
+				4876E72829AA651500F6D0DB /* HealthographyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4876E75029AA7C5D00F6D0DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4876E75729AA7C5D00F6D0DB /* HealthographyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4876E75929AA7C5D00F6D0DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4876E72329AA651500F6D0DB /* Healthography */;
+			targetProxy = 4876E75829AA7C5D00F6D0DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4876E73029AA651A00F6D0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4876E73129AA651A00F6D0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4876E73329AA651A00F6D0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Healthography/Healthography.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Healthography/Preview Content\"";
+				DEVELOPMENT_TEAM = ZR7ZQ4ZYBX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to access your Health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to write Health data";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.Healthography;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4876E73429AA651A00F6D0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Healthography/Healthography.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Healthography/Preview Content\"";
+				DEVELOPMENT_TEAM = ZR7ZQ4ZYBX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to access your Health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to write Health data";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.Healthography;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4876E75B29AA7C5D00F6D0DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZR7ZQ4ZYBX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.HealthographyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healthography.app/Healthography";
+			};
+			name = Debug;
+		};
+		4876E75C29AA7C5D00F6D0DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZR7ZQ4ZYBX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.self.HealthographyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Healthography.app/Healthography";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4876E71F29AA651400F6D0DB /* Build configuration list for PBXProject "Healthography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4876E73029AA651A00F6D0DB /* Debug */,
+				4876E73129AA651A00F6D0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4876E73229AA651A00F6D0DB /* Build configuration list for PBXNativeTarget "Healthography" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4876E73329AA651A00F6D0DB /* Debug */,
+				4876E73429AA651A00F6D0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4876E75A29AA7C5D00F6D0DB /* Build configuration list for PBXNativeTarget "HealthographyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4876E75B29AA7C5D00F6D0DB /* Debug */,
+				4876E75C29AA7C5D00F6D0DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4876E73529AA65D200F6D0DB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		4876E73829AA65F200F6D0DB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4876E73629AA65D200F6D0DB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4876E73529AA65D200F6D0DB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		4876E73929AA65F200F6D0DB /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4876E73829AA65F200F6D0DB /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 4876E71C29AA651400F6D0DB /* Project object */;
+}
