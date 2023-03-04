@@ -8,18 +8,41 @@
 import SwiftUI
 
 struct ChartView: View {
-	@State var datas: [String: Double]
+	@State var datas: [TimeInterval: Double]
 	@State private var showInfo = false
+	@State private var info = ""
 	
 	var body: some View {
 		GeometryReader { geoProxy in
-			HStack(alignment: .bottom, spacing: 1) {
-				ForEach(datas.sorted(by: <), id: \.key) { key, value in
-					RoundedRectangle(cornerRadius: 8)
-						.fill(Color.indigo)
-						.frame(width: 10, height: (value / magnitude()) * geoProxy.size.height)
+			ZStack(alignment: .top) {
+				HStack(alignment: .bottom, spacing: 1) {
+					ForEach(datas.sorted(by: <), id: \.key) { key, value in
+						Button(action: { }) {
+							RoundedRectangle(cornerRadius: 8)
+								.fill(Color.indigo)
+								.frame(width: 10, height: (value / magnitude()) * geoProxy.size.height)
+						}
+						.pressAction {
+							let date = Date(timeIntervalSinceNow: key).formatted(date: .abbreviated, time: .omitted)
+							info = String(format: "%.0f", value) + " Steps\n" + date
+							showInfo = true
+						} onRelease: {
+							showInfo = false
+						}
+					}
+				}
+				
+				if showInfo {
+					Text(info)
+						.padding()
+						.background(.bar)
+						.foregroundColor(.secondary)
+						.font(.footnote)
+						.cornerRadius(10)
+						.padding()
 				}
 			}
+			.frame(height: geoProxy.size.height)
 		}
 	}
 	
@@ -30,9 +53,3 @@ struct ChartView: View {
 		return max - min
 	}
 }
-
-//struct ChartView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        ChartView()
-//    }
-//}

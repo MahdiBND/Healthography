@@ -34,7 +34,7 @@ class ApiManager {
 	func request<T: Decodable>(_ route: Route, type: T.Type) async throws -> T {
 		try await withCheckedThrowingContinuation { continuation in
 			session.request(route).validate()
-				.responseDecodable(of: T.self) { response in
+				.responseDecodable(of: type) { response in
 					switch response.result {
 						case .failure(let error):
 							continuation.resume(throwing: error)

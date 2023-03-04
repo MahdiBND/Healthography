@@ -62,7 +62,7 @@ class HealthModel: ObservableObject {
 	
 	@Published var userStepCount = ""
 	@Published var isAuthorized = false
-	@Published var monthlySteps: [String: Double] = [:]
+	@Published var monthlySteps: [TimeInterval: Double] = [:]
 	
 	init() {
 		healthRequest()
@@ -79,10 +79,8 @@ class HealthModel: ObservableObject {
 	
 	func readStepsTakenToday() {
 		healthManager.readStepCount(for: Date(), healthStore: healthStore) { step in
-			if step != 0.0 {
-				DispatchQueue.main.async {
-					self.userStepCount = String(format: "%.0f", step)
-				}
+			DispatchQueue.main.async {
+				self.userStepCount = String(format: "%.0f", step)
 			}
 		}
 	}
@@ -93,7 +91,8 @@ class HealthModel: ObservableObject {
 			if let date = NSCalendar.current.date(byAdding: .day, value: -day, to: Date()) {
 				healthManager.readStepCount(for: date, healthStore: healthStore) { step in
 					DispatchQueue.main.async {
-						let day = date.formatted(date: .abbreviated, time: .omitted)
+//						let day = date.formatted(date: .abbreviated, time: .omitted)
+						let day = date.timeIntervalSinceNow
 						self.monthlySteps[day] = step
 					}
 				}

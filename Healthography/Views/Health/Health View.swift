@@ -15,14 +15,12 @@ struct HealthView: View {
 				if !model.isAuthorized {
 					Text("Please allow this app to use your Health data.")
 				} else {
-					Text("Today's Steps: \(model.userStepCount)")
-						.padding()
-					
 					ChartView(datas: model.monthlySteps)
 						.frame(height: 200)
 						.padding()
-					
-					Spacer()
+
+					Text("Today's Steps: \(model.userStepCount)")
+						.padding()
 				}
 				
 				NavigationLink(destination: CountryInfo()) {

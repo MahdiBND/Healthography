@@ -19,9 +19,8 @@ struct ContentView: View {
 				.tabItem {
 					Label("Health", systemImage: "stethoscope")
 				}
-			
 		}
-    }
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {

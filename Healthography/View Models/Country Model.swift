@@ -27,4 +27,11 @@ class CountryModel: ObservableObject, Waitable {
 			waiting = false
 		}
 	}
+	
+	func sortedCountries(by sort: Sort) -> [Country] {
+		return countries.sorted {
+			sort == .name ? ($0.name.common < $1.name.common) :
+			($0.area > $1.area)
+		}
+	}
 }

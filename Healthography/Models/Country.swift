@@ -7,13 +7,14 @@
 
 import Foundation
 
-struct Country: Identifiable, Codable, Hashable {
-	let id = UUID()
+struct Country: Codable, Hashable {
+//	let id = UUID()
 	var name: CountryName
 	var capital: [String]?
 	var subregion: String?
 	var timezones: [String]?
 	var flags: CountryFlag
+	var area: Double
 }
 
 struct CountryName: Codable, Hashable {
@@ -22,4 +23,8 @@ struct CountryName: Codable, Hashable {
 
 struct CountryFlag: Codable, Hashable {
 	var png: String
+}
+
+enum Sort {
+	case name, area
 }
